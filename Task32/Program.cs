@@ -31,6 +31,6 @@ int[] array = new int[Convert.ToInt32(Console.ReadLine())];
 FillArray(array);
 PrintArray(array);
 ChangeArray(array);
-Console.WriteLine("\n");
+Console.WriteLine("\n" + "Измененный массив: ");
 PrintArray(array);
 
