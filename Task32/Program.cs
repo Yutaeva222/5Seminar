@@ -17,7 +17,6 @@ void PrintArray(int[] arr)
     {
         Console.Write(arr[i] + " ");
     }
-    // Console.WriteLine();
 }
 void ChangeArray(int[] arr)
 {
