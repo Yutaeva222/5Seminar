@@ -7,7 +7,7 @@ void FillArray(int[] arr)
 {
     for (int i = 0; i < arr.Length; i++)
     {
-        arr[i] = new Random().Next(-9,20);
+        arr[i] = new Random().Next(-9,10);
     }
 }
 
@@ -23,33 +23,33 @@ void PrintArray(int[] arr)
 void CheckArray (int[] arr, int check)
 {
     bool flag = false;
-    // for (int i = 0; i < arr.Length; i++)
-    // {
-    //   if (check == arr[i])
-    //     flag = true;
-    // }
-    // if(flag = true)
-    //   Console.WriteLine("ДА, это число есть в массиве"); 
-    // else 
-    //   Console.WriteLine("НЕТ, этого числа нет в массиве"); 
+    for (int i = 0; !flag && i < arr.Length; i++)
+    {
+      if (check == arr[i])
+        flag = true;
+    }
+    if(flag == true)
+      Console.WriteLine("ДА, это число есть в массиве"); 
+    else 
+      Console.WriteLine("НЕТ, этого числа нет в массиве"); 
     
-    int i = 0;
-    while (!flag && i < arr.Length)
-    {
-        if (check == arr[i])
-        {
-            flag = true;
-        }
-        i++;
-    }
-    if (flag)
-    {
-        Console.WriteLine("ДА, это число есть в массиве");
-    }
-    else
-    {
-        Console.WriteLine("НЕТ, этого числа нет в массиве!");
-    }
+    // int i = 0;
+    // while (!flag && i < arr.Length)
+    // {
+    //     if (check == arr[i])
+    //     {
+    //         flag = true;
+    //     }
+    //     i++;
+    // }
+    // if (flag)
+    // {
+    //     Console.WriteLine("ДА, это число есть в массиве");
+    // }
+    // else
+    // {
+    //     Console.WriteLine("НЕТ, этого числа нет в массиве!");
+    // }
 
 }
 
